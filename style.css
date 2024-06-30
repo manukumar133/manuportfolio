@@ -459,7 +459,6 @@ button:hover {
     background-color: #218838;
 }
 
-
 @media (max-width: 600px) {
     .skills-container {
         flex-direction: column;
@@ -470,6 +469,48 @@ button:hover {
 
 
 /* Respnosiv design & displaying navbar for small screen */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        
+    }
+    @media (max-width: 768px) {
+        #home {
+          padding-top: 100px;
+        }
+      }
+
+    .hero-pic, .hero-text {
+        flex: 1 1 100%;
+    }
+    .hero-text {
+        text-align:center;
+        padding: 10px;
+    }
+}
+@media (min-width: 768px) {
+    .timeline-items {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .timeline-item {
+        flex-direction: row;
+        align-items: flex-start;
+        max-width: 45%;
+        margin: 10px;
+    }
+
+    .timeline-dot {
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+
+    .timeline-date, .timeline-content {
+        text-align: left;
+    }
+}
 @media(max-width:930px)
 {
     nav .togglebtn{
